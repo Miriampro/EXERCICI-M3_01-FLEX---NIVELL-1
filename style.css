@@ -1,0 +1,123 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing:border-box;
+}
+
+.page{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+    .header{
+         background:black;
+         flex-flow: column nowrap;
+         align-content: center;
+    }
+        .menu{
+            background:#6e60ae;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items:center;
+        }
+            .logo{
+                background: #ce5555;
+                flex: 1 1 auto;
+                height: 15px;
+            }
+            .nav{
+                background: #ce5555;
+                flex: 5 1 auto;
+                height: 15px;
+            }
+            .social{
+                background: #ce5555;
+                flex: 1 1 auto;
+                height: 15px;
+            }
+        .introduction{
+            background: #e66f34;
+          
+        }
+            h1{
+                background: #f3c139;
+            }
+
+    .section{
+        background: black;
+        display: flex;
+
+    }
+        .articles{
+            background: #3f3f7e;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #1a70bb;
+                flex: 1 1 40%;
+            }
+            .navigation{
+                background: #70a0c0;
+                flex: 1 1 100%;
+            }
+        .aside{
+           background: #f53649; 
+           flex: 1 1 auto;
+        }    
+            .advertisement{
+                background: #f3df7b ;
+            }
+
+    .footer{
+        background: black;
+    }
+        .foot{
+            background: #ecb22a;
+        }
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+        background: yellow ;
+    }
+    .menu{
+        height:auto;
+    }
+}
+@media all and (max-width: 600px){
+    .header{
+        display: flex;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .articles{
+        flex-direction: column;
+    }
+    .section{
+        flex-direction: column;
+        background: rgb(226, 151, 12);
+    }
+    .aside{
+        flex-direction: column;
+        background: #d62976; 
+    }
+        .advertisement{
+         background: #feda75 ;
+        }
+        .articles{
+            background: #0392cf;
+
+        }
+            .article{
+                background: #009688;
+                flex: 1 1 40%;
+            }
+            .navigation{
+                background: #83d0c9;
+                flex: 1 1 100%;
+            }
+}
